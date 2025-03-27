@@ -3,20 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Page</title>
+  <title>Beautiful Bootstrap Page</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f8f9fa;
+    }
+    .card {
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      width: 100%;
+      max-width: 500px;
+    }
+  </style>
 </head>
 <body>
 
-  <div class="container mt-5">
-    <h1 class="mb-4">Simple Web Page with Bootstrap</h1>
+  <div class="card text-center">
+    <h2 class="mb-4">Stylish Form</h2>
 
+    <!-- Text Box -->
     <div class="mb-3">
       <label for="inputText" class="form-label">Text Box</label>
       <input type="text" class="form-control" id="inputText" placeholder="Type something...">
     </div>
 
+    <!-- Drop-Down Box -->
     <div class="mb-3">
       <label for="selectOption" class="form-label">Drop-Down Box</label>
       <select class="form-select" id="selectOption">
@@ -26,6 +44,7 @@
       </select>
     </div>
 
+    <!-- Button -->
     <button type="button" class="btn btn-primary" onclick="alert('Button clicked!')">Click Me</button>
   </div>
 
